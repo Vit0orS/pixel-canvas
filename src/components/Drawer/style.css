@@ -1,0 +1,13 @@
+.sliders {
+    width: 50%;
+}
+
+.drawerOptions {
+    padding: 30px;
+}
+
+.option__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
