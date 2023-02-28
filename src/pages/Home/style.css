@@ -1,0 +1,4 @@
+.no-decoration-links {
+    text-decoration: none!important;
+    cursor: pointer;
+}

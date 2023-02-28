@@ -1,6 +1,6 @@
 import "./style.css";
 
-function Colors({ handleClose, id, array }) {
+function Colors({ handleClose, id, array, setAllPixels }) {
   const colors = [
     "red",
     "green",
@@ -13,12 +13,15 @@ function Colors({ handleClose, id, array }) {
   ];
 
   function changeColor(color) {
-    console.log(array)
-    for(let i=0; i<array.length; i++) {
-        if(array[i].id === id) {
-            array[i].color = color;
+    let arrayCopy = array;
+    
+    for(let i=0; i<arrayCopy.length; i++) {
+        if(arrayCopy[i].id === id) {
+            arrayCopy[i].color = color;
         }
     }
+
+    setAllPixels(arrayCopy);
   }
 
   return (
